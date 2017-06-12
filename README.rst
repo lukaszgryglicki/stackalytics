@@ -12,6 +12,29 @@ development activities and displays statistics on contribution. The features are
  * Extract blueprint and bug ids from commit messages;
  * Auto-update of database.
 
+Docker version
+--------------
+
+This is a Docker version (forked by Łukasz Gryglicki lukaszgryglicki@o2.pl)
+You need to provide Your own private SSH key in etc/id_rsa to allow gerrit communication.
+This file must be recognized by gerrit - follow documentation how to upload Your SSH public key.
+You need to paste Your public key in gerrit web interface, and also set correct username
+in both web interface and etc/stackalytics.conf (ssh_username)
+
+Run with Docker
+---------------
+
+1. To use Docker You need to build docker image (because there is no SSH key and SSH user name in `https://hub.docker.com/r/lukaszgryglicki/stackalytics/`
+2. Set SSH username (ssh_username) in `etc/stackalytics.conf`, also make sure You uploaded Your public SSH key (`~/.ssh/id_rsa.pub`) to gerrit we interface
+3. Put Your private SSH key (`~/.ssh/id_rsa`) in `etc/` (this image has no SSH keys, they're also skipped in git `.gitignore` and `.dockerignore`)
+4. Run `./docker_build.sh` to build Your own image (You will need to adjust docker usernames etc.)
+5. Take a look at all scripts starting with `docker_` (examine them before running to change docker user name etc).
+6. When docker image is build, start `./docker_server.sh`
+7. Start `./docker_ssh.sh`: user name is "stackalytics", password is "stackalytics"
+8. Once logged in, try: `sudo bash` (use "stackalytics" password) and `cd /stackalytics`
+9. To run analysis `./run_processor.sh`, to run dashboard: `./run_dashboard.sh`
+10. Go to `localhost:18080 in Your browser` or use Your domain name or external IP (if You have one) instead of local host
+
 Quickstart
 ----------
 
