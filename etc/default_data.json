@@ -1831,7 +1831,7 @@
             "gerrit_id": "antoinecabot",
             "companies": [
                 {
-                    "company_name": "B<>COM",
+                    "company_name": "B.COM",
                     "end_date": null
                 }
             ],
@@ -5251,7 +5251,7 @@
             "gerrit_id": "David.T",
             "companies": [
                 {
-                    "company_name": "B<>COM",
+                    "company_name": "B.COM",
                     "end_date": null
                 }
             ],
@@ -26000,8 +26000,8 @@
         },
         {
             "domains": ["b-com.com"],
-            "company_name": "B<>COM",
-            "aliases": ["IRT B<>COM", "B-COM"]
+            "company_name": "B.COM",
+            "aliases": ["IRT B.COM", "B-COM"]
         },
         {
             "domains": ["b1-systems.de"],
