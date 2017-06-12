@@ -19,7 +19,7 @@ from oslo_config import cfg
 
 
 DASHBOARD_OPTS = [
-    cfg.HostAddressOpt('listen-host', default='127.0.0.1',
+    cfg.HostAddressOpt('listen-host', default='0.0.0.0',
                        help='The address dashboard listens on'),
     cfg.IntOpt('listen-port', default=8080,
                help='The port dashboard listens on'),
