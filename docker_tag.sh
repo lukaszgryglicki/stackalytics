@@ -1,2 +1,2 @@
 #!/bin/sh
-docker tag lukaszgryglicki-stackanalytics lukaszgryglicki/stackanalytics:tag
+docker tag lukaszgryglicki-stackalytics lukaszgryglicki/stackalytics:tag
