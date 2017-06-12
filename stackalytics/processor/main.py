@@ -65,7 +65,7 @@ def update_pids(runtime_storage):
 
 
 def _merge_commits(original, new):
-    if new['branches'] < original['branches']:
+    if original == None or new == None or new['branches'] < original['branches']:
         return False
     else:
         original['branches'] |= new['branches']
