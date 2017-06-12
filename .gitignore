@@ -18,3 +18,5 @@ doc/source/api/
 .testrepository/
 .tox/
 .idea
+etc/id_rsa.pub
+etc/id_rsa
