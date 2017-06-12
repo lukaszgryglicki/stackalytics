@@ -1,1 +1,1 @@
-libpython2.7-dev libssl-dev python-pip git memcached nginx uwsgi uwsgi-plugin-python ssh vim sudo libffi-dev
+libpython2.7-dev libssl-dev python-pip git memcached nginx uwsgi uwsgi-plugin-python ssh vim sudo libffi-dev apt-utils
